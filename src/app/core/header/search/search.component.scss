@@ -1,0 +1,26 @@
+.search {
+  width: 160px;
+  height: 40px;
+  background: #2B3036;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.search__left {
+  width: 40px;
+}
+
+.search__right {
+  width: 120px;
+}
+
+.search-input {
+  background: rgba(43, 48, 54, 0);
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+}
