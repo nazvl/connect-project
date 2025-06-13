@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit  {
       this.colorTheme = saveTheme;
     }
 
-    this.colorChanger(this.colorTheme);
+    this.colorChanger();
   }
 
   changeTheme() {
@@ -34,14 +34,14 @@ export class HeaderComponent implements OnInit  {
     } else {
       this.colorTheme = 'dark';
     }
-    this.colorChanger(this.colorTheme);
+    this.colorChanger();
 
     localStorage.setItem('colorTheme', this.colorTheme);
 
     console.log(this.colorTheme);
   };
 
-  colorChanger(color: string) {
+  colorChanger() {
     const root = document.documentElement;
     if (this.colorTheme === 'dark') {
       root.style.setProperty('--background', '#121417');
