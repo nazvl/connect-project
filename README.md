@@ -9,8 +9,7 @@
 
 ## Скриншот
 
-![img.png](img.png)
-
+![img_3.png](img_3.png)
 ## Технологии
 
 * **Frontend:** Angular, Font Awesome
