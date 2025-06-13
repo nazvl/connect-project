@@ -1,0 +1,27 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+li {
+  padding: 9px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  gap: 12px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.active {
+  background-color: var(--gray-darker);
+  border-radius: 12px;
+  transition: 300ms;
+}

@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let item of links; let i = index" [class.active]="i == choosenSection" (click)="chooseSection(i)">
+    <a [href]="item.link">
+      <span [innerHTML]="item.image"></span>
+      {{ item.name }}
+    </a>
+  </li>
+</ul>
+
