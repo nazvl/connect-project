@@ -1,32 +1,28 @@
 <div class="header">
-  <div class="header__left">
-    <div>
-      <app-logo-image></app-logo-image>
-    </div>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Friends</li>
-        <li>Messages</li>
-      </ul>
-    </nav>
-  </div>
-  <div class="header__right">
-    <div class="search">
-      <app-search>
+    <div class="header__left">
+        <div>
+            <app-logo-image></app-logo-image>
+        </div>
+        <app-navigation>
 
-      </app-search>
+        </app-navigation>
     </div>
-    <div class="button-block">
-      <button class="notifications">
-        <img src="https://cdn-icons-png.flaticon.com/512/4004/4004125.png" alt="">
-      </button>
-      <button class="night-mode">
-        <img src="https://avatanplus.com/files/resources/original/567691a00bd48151bf28d930.png" alt="">
-      </button>
+    <div class="header__right">
+        <div class="search">
+            <app-search>
+
+            </app-search>
+        </div>
+        <div class="button-block">
+            <button class="notifications">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <button class="night-mode">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+        </div>
+        <div>
+            <app-profile-photo></app-profile-photo>
+        </div>
     </div>
-    <div>
-      <app-profile-photo></app-profile-photo>
-    </div>
-  </div>
 </div>

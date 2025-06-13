@@ -6,15 +6,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .search__left {
   width: 40px;
+  color: var(--gray-secondary);
+}
+.search__left i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search__right {
   width: 120px;
+  padding-right: 8px;
 }
 
 .search-input {
@@ -22,5 +28,7 @@
   border: none;
   outline: none;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--gray-secondary);
 }
