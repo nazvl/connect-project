@@ -7,7 +7,6 @@ import {ProfilePhotoComponent} from '../../profile-photo/profile-photo.component
   imports: [
     NgForOf,
     ProfilePhotoComponent,
-    NgIf
   ],
   templateUrl: './post-template.component.html',
   styleUrl: './post-template.component.scss'

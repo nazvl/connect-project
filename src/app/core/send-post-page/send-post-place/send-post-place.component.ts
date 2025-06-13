@@ -19,8 +19,18 @@ export class SendPostPlaceComponent {
   }
   sendMessage() {
     const textarea = document.getElementById('text-area-with-new-post') as HTMLTextAreaElement;
-    const content = textarea.value;
-    console.error('Недоступна отправка сообщения', content); // обработка отправки сообщения
+
+    if (textarea) {
+      const content = textarea.value.trim(); // trim убирает лишние пробелы в начале и конце
+
+      if (content !== "") {
+        // Здесь логика отправки сообщения
+        console.log("Отправка сообщения:", content);
+      } else {
+        console.warn("Сообщение не может быть пустым.");
+      }
+    }
   }
+
   protected readonly document = document;
 }

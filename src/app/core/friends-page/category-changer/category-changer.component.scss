@@ -1,0 +1,20 @@
+ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  border-bottom: 1px solid var(--gray-darker);
+}
+
+li {
+  font-weight: bold;
+  color: var(--gray-secondary);
+  border-bottom: 3px solid var(--gray-secondary);
+  padding-bottom: 13px;
+  transition: 300ms;
+  cursor: default;
+}
+
+.active {
+  color: var(--text);
+  border-bottom: 3px solid var(--text);
+}

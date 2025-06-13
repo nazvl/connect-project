@@ -1,0 +1,19 @@
+.friends-container {
+  font-family: "Be Vietnam Pro", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+h1 {
+  font-size: 32px;
+}
+p {
+  font-size: 14px;
+  color: var(--gray-secondary);
+}
+.search-wrapper {
+  margin-top: 16px;
+  height: 48px;
+  margin-bottom: 26px;
+}
