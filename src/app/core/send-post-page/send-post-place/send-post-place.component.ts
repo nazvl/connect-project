@@ -17,4 +17,10 @@ export class SendPostPlaceComponent {
     console.log('Выбран файл:', file);
     // Здесь можно отправить на сервер
   }
+  sendMessage() {
+    const textarea = document.getElementById('text-area-with-new-post') as HTMLTextAreaElement;
+    const content = textarea.value;
+    console.error('Недоступна отправка сообщения', content); // обработка отправки сообщения
+  }
+  protected readonly document = document;
 }

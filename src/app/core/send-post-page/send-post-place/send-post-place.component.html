@@ -5,7 +5,7 @@
   <div class="send-post__right">
     <textarea id="text-area-with-new-post" placeholder="What are you thinking about?"></textarea>
     <div class="buttons">
-      <button>
+      <button (click)="sendMessage()">
         <i class="fa-solid fa-paper-plane"></i>
       </button>
       <button (click)="fileInput.click()" type="button">
