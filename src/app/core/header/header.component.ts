@@ -54,7 +54,7 @@ export class HeaderComponent implements OnInit  {
     else {
       root.style.setProperty('--background', '#ffffff');
       root.style.setProperty('--text', '#000000');
-      root.style.setProperty('--gray-secondary', '#cccccc');
+      root.style.setProperty('--gray-secondary', '#959595');
       root.style.setProperty('--text-secondary', '#3333ff');
       root.style.setProperty('--gray-darker', '#dddddd');
       root.style.setProperty('--gray-darkest', '#eeeeee');

@@ -15,13 +15,19 @@ export class ProfileNavigationComponent {
     { id: 3, name: 'Messages', image: '<i class="fa-regular fa-message"></i>', link: 'messages' }
   ];
 
-  choosenSection: number = 0;
+  currentPage:string;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.currentPage = router.url;
+  }
+
+  choosenSection: number = 0; // TODO: тут хочу задавать ID который такой же как у ссылки
+
 
   chooseSection(id: number): void {
     this.choosenSection = id;
     const route = this.links.find(link => link.id - 1 === id)?.link || '';
     this.router.navigate([route]);
+
   }
 }
