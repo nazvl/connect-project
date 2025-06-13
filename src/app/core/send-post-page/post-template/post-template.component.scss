@@ -1,0 +1,39 @@
+.post {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.post-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.post__lower {
+
+}
+.author {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.post-image {
+  border-radius: 12px;
+  max-height: 250px;
+  object-fit: cover;
+}
+.post-text {
+  margin-bottom: 5px;
+}
+.date {
+  font-size: 10px;
+  color: var(--gray-secondary);
+}
+
+.liked {
+  color: red;
+}
