@@ -1,0 +1,56 @@
+.send-post {
+  background-color: var(--gray-darkest);
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--gray-darker);
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  gap: 16px;
+}
+
+.send-post__right {
+  width: 100%;
+  display: flex;
+}
+.send-post__right textarea{
+  background-color: var(--gray-darkest);
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  vertical-align: top;
+  line-height: 21px;
+  color: var(--gray-secondary);
+  font-family: "Be Vietnam Pro", "Helvetica Neue", sans-serif;
+}
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+.buttons {
+  display: flex;
+  gap: 18px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 200ms;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: var(--gray-secondary);
+  font-size: 18px;
+}
+input {
+  display: none;
+}

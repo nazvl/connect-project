@@ -1,0 +1,26 @@
+<div class="send-post">
+  <div class="profile-photo">
+    <app-profile-photo></app-profile-photo>
+  </div>
+  <div class="send-post__right">
+    <textarea id="text-area-with-new-post"></textarea>
+    <div class="buttons">
+      <button>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+      <button (click)="fileInput.click()" type="button">
+        <i class="fa-solid fa-images"></i>
+      </button>
+
+      <!-- Скрытый input вне кнопки -->
+      <input
+        type="file"
+        id="sender-image"
+        name="sender-image"
+        accept="image/png, image/jpeg"
+        #fileInput
+        (change)="onFileSelect($event)"
+      />
+    </div>
+  </div>
+</div>
