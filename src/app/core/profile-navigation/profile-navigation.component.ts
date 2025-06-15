@@ -22,8 +22,7 @@ export class ProfileNavigationComponent {
 
 
   ngOnInit() {
-    let currentLink:number = this.pageToID(this.router.url);
-    this.chooseSection(currentLink);
+    this.chooseSection(0);
     // пока что так это временное решение, TODO: сделать чтобы оно нормально сохраняло текущую страницу
   }
 
