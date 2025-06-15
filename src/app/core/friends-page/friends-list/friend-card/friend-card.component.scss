@@ -4,6 +4,13 @@
   border-radius: 12px;
   width: 160px;
   height: 190px;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.friend-card:hover {
+  border-color: var(--gray-darker);
+  transform: translatey(2px);
 }
 
 .friend-card__upper {

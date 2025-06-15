@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {NgForOf, NgIf} from '@angular/common';
 import {FriendCardComponent} from './friend-card/friend-card.component';
 import {CategoryChangerComponent} from '../category-changer/category-changer.component';
@@ -28,10 +28,7 @@ export class FriendsListComponent {
 
   choosedCategory: number = 0;
 
-
-
-
-    friends: Friend[] = [
+  friends: Friend[] = [
     {
       id: 0,
       name: 'Ivan Petrov',
