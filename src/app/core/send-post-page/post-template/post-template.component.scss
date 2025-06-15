@@ -24,7 +24,7 @@
 .post-image {
   border-radius: 12px;
   max-height: 250px;
-  object-fit: cover;  
+  object-fit: cover;
 }
 .post-text {
   margin-bottom: 5px;
@@ -36,4 +36,8 @@
 
 .liked {
   color: red;
+}
+
+.like-block {
+  cursor: pointer;
 }

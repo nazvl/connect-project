@@ -1,11 +1,11 @@
-<div class="post" *ngFor="let post of posts; let i = index">
+<div class="post" *ngFor="let post of posts;">
   <div class="post__left">
     <div class="post-info">
-      <app-profile-photo>
+      <app-profile-photo [link]="post.authorPhoto" [photo]="post.authorPhoto">
       </app-profile-photo>
       <div>
-        <p class="author">{{post.author }}</p>
-        <p class="date">{{post.time }}</p>
+        <p class="author">{{ post.author }}</p>
+        <p class="date">{{ post.time }}</p>
       </div>
     </div>
   </div>
@@ -15,6 +15,9 @@
     </p>
     <img class="post-image" src="{{post.photo}}" alt="">
   </div>
-  <i class="fa-regular fa-heart" (click)="likedPost(post.id - 1)" [class.liked]="post.liked"></i>
+  <div (click)="likedPost(post.id - 1)" class="like-block">
+    <i class="fa-regular fa-heart" [class.liked]="post.liked"></i>
+    {{ post.likes }}
+  </div>
 </div>
 
