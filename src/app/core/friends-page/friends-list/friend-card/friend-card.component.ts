@@ -5,7 +5,6 @@ import {ProfilePhotoComponent} from '../../../profile-photo/profile-photo.compon
 @Component({
   selector: 'app-friend-card',
   imports: [
-    NgForOf,
     ProfilePhotoComponent
   ],
   templateUrl: './friend-card.component.html',

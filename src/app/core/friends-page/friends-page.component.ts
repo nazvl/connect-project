@@ -7,7 +7,6 @@ import {FriendsListComponent} from './friends-list/friends-list.component';
   selector: 'app-friends-page',
   imports: [
     SearchComponent,
-    CategoryChangerComponent,
     FriendsListComponent
   ],
   templateUrl: './friends-page.component.html',
