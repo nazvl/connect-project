@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { NgForOf } from '@angular/common';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
+import {NgForOf} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-profile-navigation',
@@ -10,19 +10,36 @@ import { Router } from '@angular/router';
 })
 export class ProfileNavigationComponent {
   links = [
-    { id: 1, name: 'Home', image: '<i class="fa-regular fa-newspaper"></i>', link: '' },
-    { id: 2, name: 'Friends', image: '<i class="fa-solid fa-user-group"></i>', link: 'friends' },
-    { id: 3, name: 'Messages', image: '<i class="fa-regular fa-message"></i>', link: 'messages' }
+    {id: 1, name: 'Home', image: '<i class="fa-regular fa-newspaper"></i>', link: ''},
+    {id: 2, name: 'Friends', image: '<i class="fa-solid fa-user-group"></i>', link: 'friends'},
+    {id: 3, name: 'Messages', image: '<i class="fa-regular fa-message"></i>', link: 'messages'}
   ];
 
-  currentPage:string;
+  choosenSection: number = 0;
 
   constructor(private router: Router) {
-    this.currentPage = router.url;
   }
 
-  choosenSection: number = 0; // TODO: тут хочу задавать ID который такой же как у ссылки
 
+  ngOnInit() {
+    let currentLink:number = this.pageToID(this.router.url);
+    this.chooseSection(currentLink);
+    // пока что так это временное решение, TODO: сделать чтобы оно нормально сохраняло текущую страницу
+  }
+
+  pageToID(page:string):number  {
+    let id = 0;
+    if(page == '/'){
+      id = 0;
+    }
+    else if(page == '/friends'){
+      id = 1;
+    }
+    else if(page == '/messages'){
+      id = 2;
+    }
+    return id;
+  }
 
   chooseSection(id: number): void {
     this.choosenSection = id;
