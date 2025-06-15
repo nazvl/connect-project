@@ -8,8 +8,9 @@
 * Иконки уведомлений, переключатель темы и аватар пользователя
 
 ## Скриншоты
-![img_1.png](img_1.png)
-![img.png](img.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+
 ## Технологии
 
 * **Frontend:** Angular, Font Awesome

@@ -29,7 +29,7 @@ export class PostTemplateComponent {
     {
       id: 1,
       author: 'Johan Smith',
-      authorPhoto: 'https://picsum.photos/200/200',
+      authorPhoto: 'https://picsum.photos/500/200',
       time: this.formatted,
       photo: '',
       liked: false,

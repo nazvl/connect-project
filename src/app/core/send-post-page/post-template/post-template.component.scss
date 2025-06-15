@@ -23,6 +23,12 @@
   flex-direction: column;
 
 }
+
+.post-image-block {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
 .post-image {
   border-radius: 12px;
   max-height: 250px;
@@ -41,6 +47,7 @@
 }
 
 .like-block {
-  display: inline-block;
   cursor: pointer;
+  width: fit-content;
+
 }
