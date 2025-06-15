@@ -1,6 +1,8 @@
-import {Component} from '@angular/core';
-import {NgForOf} from '@angular/common';
+import {Component, ViewChild, AfterViewInit} from '@angular/core';
+import {NgForOf, NgIf} from '@angular/common';
 import {FriendCardComponent} from './friend-card/friend-card.component';
+import {CategoryChangerComponent} from '../category-changer/category-changer.component';
+
 
 interface Friend {
   id: number;
@@ -14,14 +16,22 @@ interface Friend {
   selector: 'app-friends-list',
   imports: [
     NgForOf,
-    FriendCardComponent
+    FriendCardComponent,
+    CategoryChangerComponent,
+    NgIf
   ],
   templateUrl: './friends-list.component.html',
   styleUrl: './friends-list.component.scss'
 })
 
 export class FriendsListComponent {
-  friends: Friend[] = [
+
+  choosedCategory: number = 0;
+
+
+
+
+    friends: Friend[] = [
     {
       id: 0,
       name: 'Ivan Petrov',
@@ -90,6 +100,80 @@ export class FriendsListComponent {
       name: 'Natalia Orlova',
       profilePhoto: 'https://randomuser.me/api/portraits/women/51.jpg',
       job: 'Business Analyst',
+      link: '#'
+    }
+  ];
+  friends2: Friend[] = [
+    {
+      id: 0,
+      name: 'Oleg Fedorov',
+      profilePhoto: 'https://randomuser.me/api/portraits/men/52.jpg',
+      job: 'System Architect',
+      link: '#'
+    },
+    {
+      id: 1,
+      name: 'Irina Sokolova',
+      profilePhoto: 'https://randomuser.me/api/portraits/women/53.jpg',
+      job: 'Scrum Master',
+      link: '#'
+    },
+    {
+      id: 2,
+      name: 'Maxim Egorov',
+      profilePhoto: 'https://randomuser.me/api/portraits/men/54.jpg',
+      job: 'Security Specialist',
+      link: '#'
+    },
+    {
+      id: 3,
+      name: 'Olga Popova',
+      profilePhoto: 'https://randomuser.me/api/portraits/women/55.jpg',
+      job: 'Technical Writer',
+      link: '#'
+    },
+    {
+      id: 4,
+      name: 'Vladimir Kozlov',
+      profilePhoto: 'https://randomuser.me/api/portraits/men/56.jpg',
+      job: 'Cloud Engineer',
+      link: '#'
+    }
+  ];
+  friends3: Friend[] = [
+    {
+      id: 0,
+      name: 'Tatiana Romanova',
+      profilePhoto: 'https://randomuser.me/api/portraits/women/57.jpg',
+      job: 'Data Scientist',
+      link: '#'
+    },
+    {
+      id: 1,
+      name: 'Andrey Pavlov',
+      profilePhoto: 'https://randomuser.me/api/portraits/men/58.jpg',
+      job: 'ML Engineer',
+      link: '#'
+    },
+    {
+      id: 2,
+      name: 'Ekaterina Ivanova',
+      profilePhoto: 'https://randomuser.me/api/portraits/women/59.jpg',
+      job: 'Technical Recruiter',
+      link: '#'
+    },
+    {
+      id: 3,
+      name: 'Nikolay Gribov',
+      profilePhoto: 'https://randomuser.me/api/portraits/men/60.jpg',
+      job: 'IT Consultant',
+      link: '#'
+    },
+    {
+      id: 4,
+      name: 'Veronika Melnikova',
+      profilePhoto: 'https://randomuser.me/api/portraits/women/61.jpg',
+      job: 'UX Researcher',
       link: '#'
     }
   ];

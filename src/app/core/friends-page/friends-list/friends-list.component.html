@@ -1,9 +1,18 @@
-<div class="list-container">
-  <div class="profile-card" *ngFor="let friend of friends">
-    <app-friend-card [name]="friend.name" [photo]="friend.profilePhoto" [job]="friend.job" link="friend.link" >
+<div class="list-component">
+  <div>
+    <app-category-changer>
 
-    </app-friend-card>
+    </app-category-changer>
   </div>
+
+  <div class="list-container" *ngIf="choosedCategory == 0">
+    <div class="profile-card" *ngFor="let friend of friends">
+      <app-friend-card [name]="friend.name" [photo]="friend.profilePhoto" [job]="friend.job" link="friend.link">
+
+      </app-friend-card>
+    </div>
+  </div>
+
 
 </div>
 

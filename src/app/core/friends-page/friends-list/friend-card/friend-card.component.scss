@@ -1,0 +1,31 @@
+.friend-card {
+  background-color: var(--gray-darker);
+  border: 1px solid #3D4754;
+  border-radius: 12px;
+  width: 160px;
+  height: 190px;
+}
+
+.friend-card__upper {
+  padding: 16px;
+}
+
+.friend-card__lower {
+  padding: 16px;
+  font-family: "Be Vietnam Pro", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.friend-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.friend-job {
+  font-size: 12px;
+  overflow: hidden;
+  color: var(--gray-secondary);
+}

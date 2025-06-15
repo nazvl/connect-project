@@ -32,7 +32,7 @@ export class CategoryChangerComponent {
     },
   ];
 
-  choosedCategory:number = 0;
+  public choosedCategory:number = 0;
 
   chooseCategory(id : number) {
     this.choosedCategory = id;
