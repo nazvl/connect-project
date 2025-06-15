@@ -29,9 +29,9 @@ export class PostTemplateComponent {
     {
       id: 1,
       author: 'Johan Smith',
-      authorPhoto: 'https://picsum.photos/400/400',
+      authorPhoto: 'https://picsum.photos/200/200',
       time: this.formatted,
-      photo: 'https://picsum.photos/600/600',
+      photo: '',
       liked: false,
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper libero vitae porttitor porta. Curabitur commodo risus sapien, ac auctor erat faucibus at. Nulla imperdiet dolor sagittis nisl aliquam, vel tristique est molestie. In sem sem, vestibulum sed luctus sed, sagittis at dui. Suspendisse potenti. Sed varius, libero ut finibus placerat, ex dui sagittis leo, vitae tempor enim ligula sit amet nunc. Mauris nec tortor eleifend, imperdiet massa at, efficitur enim. Fusce lobortis efficitur arcu sit amet facilisis. Praesent vitae nisi et libero volutpat interdum. Fusce quis lectus eu purus rhoncus commodo sit amet vitae mauris. Suspendisse sed nibh nisl. Proin id imperdiet erat. Nulla congue, nulla suscipit rutrum molestie, ipsum metus sagittis velit, sit amet suscipit lectus odio ac ex. ',
       likes: 322,

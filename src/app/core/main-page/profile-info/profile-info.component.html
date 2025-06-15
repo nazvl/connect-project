@@ -1,6 +1,7 @@
 <div class="profile-info">
   <div>
-    <app-profile-photo></app-profile-photo>
+    <!--  тут ава активного пользователя-->
+    <app-profile-photo [photo]="'https://picsum.photos/50/50'"></app-profile-photo>
   </div>
   <div class="profile-info__text">
     <p id="profile-info__name">{{ name }}</p>

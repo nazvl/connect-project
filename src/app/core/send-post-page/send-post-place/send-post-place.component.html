@@ -1,6 +1,7 @@
 <div class="send-post">
   <div class="profile-photo">
-    <app-profile-photo></app-profile-photo>
+    <!--  тут ава активного пользователя-->
+    <app-profile-photo [photo]="'https://picsum.photos/50/50'"></app-profile-photo>
   </div>
   <div class="send-post__right">
     <textarea id="text-area-with-new-post" placeholder="What are you thinking about?"></textarea>

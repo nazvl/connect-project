@@ -13,11 +13,15 @@
     <p class="post-text">
       {{ post.text }}
     </p>
-    <img class="post-image" src="{{post.photo}}" alt="">
+    <div>
+      <img class="post-image" src="{{post.photo}}" alt="">
+    </div>
+
+    <div (click)="likedPost(post.id - 1)" class="like-block">
+      <i class="fa-regular fa-heart" [class.liked]="post.liked"></i>
+      {{ post.likes }}
+    </div>
   </div>
-  <div (click)="likedPost(post.id - 1)" class="like-block">
-    <i class="fa-regular fa-heart" [class.liked]="post.liked"></i>
-    {{ post.likes }}
-  </div>
+
 </div>
 
