@@ -1,4 +1,4 @@
-<div class="post" *ngFor="let post of posts;">
+<div class="post" *ngFor="let post of posts;" [class.whited] = 'whited'>
   <div class="post__left">
     <div class="post-info">
       <app-profile-photo [link]="post.authorPhoto" [photo]="post.authorPhoto">

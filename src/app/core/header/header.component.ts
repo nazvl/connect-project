@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit  {
     this.colorChanger();
 
     localStorage.setItem('colorTheme', this.colorTheme);
-
+    location.reload();
     console.log(this.colorTheme);
   };
 

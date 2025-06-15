@@ -24,6 +24,15 @@ export class PostTemplateComponent {
     minute: '2-digit',
     hour12: false
   });
+  whited = this.isWhiteModeCheck()
+
+  isWhiteModeCheck() {
+
+    let theme:string | null = localStorage.getItem('colorTheme');
+    console.log(theme);
+    return theme != 'dark';
+  }
+
 
   posts = [
     {
