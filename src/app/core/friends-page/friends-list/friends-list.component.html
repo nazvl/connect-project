@@ -1,3 +1,9 @@
 <div class="list-container">
+  <div class="profile-card" *ngFor="let friend of friends">
+    <app-friend-card [name]="friend.name" [photo]="friend.profilePhoto" [job]="friend.job" link="friend.link" >
+
+    </app-friend-card>
+  </div>
 
 </div>
+

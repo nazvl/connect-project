@@ -1,4 +1,8 @@
 .list-container {
   width: 100%;
-  min-height: 370px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 32px 0;
+  flex-wrap: wrap;
 }
