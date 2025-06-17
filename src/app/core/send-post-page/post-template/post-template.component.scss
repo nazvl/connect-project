@@ -57,3 +57,12 @@
   width: fit-content;
 
 }
+
+@media (max-width: 910px) {
+    .post {
+      width: 100%;
+    }
+    .post-text {
+      font-size: 14px;
+    }
+}

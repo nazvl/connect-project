@@ -55,3 +55,9 @@ i {
 .notifications:hover, .night-mode:hover {
   background-color: var(--gray-secondary);
 }
+
+@media (max-width: 560px) {
+  .header__right {
+    display: none;
+  }
+}
